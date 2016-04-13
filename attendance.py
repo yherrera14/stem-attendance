@@ -1,5 +1,7 @@
 __author__ = 'student'
+
 import time
+from time import localtime,strftime
 
 student_info = {'4401001': 'Christine Adewale',
 '44001722': 'Wayne Bertrand',
@@ -17,4 +19,4 @@ student_info = {'4401001': 'Christine Adewale',
 
 while True:
     s_id = input('Scan student id: ')
-    print('%s checked in - %s' % (student_info[s_id], time.time()))
+    print('%s checked in - %s' % (student_info[s_id], time.strftime("%I:%M %p")))
