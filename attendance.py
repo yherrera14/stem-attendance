@@ -26,4 +26,4 @@ while True:
             roster[s_id]['present'].append(time.strftime("%m/%d at %I/%M")) # adds the name of student and date/time tot he list "present
             print('%s checked in on %s' % (roster[s_id]['name'], time.strftime("%m/%d at %I:%M"))) #spits out the name of the student and the dateand time
     except KeyError:
-        print("Invalid ID number") #when an invalid input is typed, it recognizes the mistake
+        print("Invalid ID number") #when an invalid input is typed, it recognizes the mistake and spits out "Invalid ID number"
